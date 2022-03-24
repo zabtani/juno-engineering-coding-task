@@ -1,7 +1,13 @@
-import React from "react";
-import { fetchImageUrls } from "../api/index";
+import Carousel from './Carousel';
+import { useStyles } from './useStyles';
 
-const ImageCarousel = (props) => {
-    return <h1>Your code goes here</h1>;
+const ImageCarousel = () => {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.container}>
+      <Carousel />
+    </div>
+  );
 };
 export default ImageCarousel;
